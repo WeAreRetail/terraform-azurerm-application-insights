@@ -53,7 +53,13 @@ module "umanis_application_insights" {
 
 #### Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_app_id"></a> [app\_id](#output\_app\_id) | The App ID associated with this Application Insights component. |
+| <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | The Connection String for this Application Insights component. (Sensitive) |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the Application Insights component. |
+| <a name="output_instrumentation_key"></a> [instrumentation\_key](#output\_instrumentation\_key) | The Instrumentation Key for this Application Insights component. (Sensitive) |
+| <a name="output_name"></a> [name](#output\_name) | The name of the Application Insights component. |
 <!-- END_TF_DOCS -->
 ## Related documentation
 
