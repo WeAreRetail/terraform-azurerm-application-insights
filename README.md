@@ -26,7 +26,7 @@ module "umanis_application_insights" {
 
 ```
 <!-- BEGIN_TF_DOCS -->
-## Requirements
+#### Requirements
 
 | Name | Version |
 |------|---------|
@@ -34,7 +34,7 @@ module "umanis_application_insights" {
 | <a name="requirement_azurecaf"></a> [azurecaf](#requirement\_azurecaf) | >= 1.2.16 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >=3.0.2 |
 
-## Inputs
+#### Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -51,15 +51,9 @@ module "umanis_application_insights" {
 | <a name="input_name_separator"></a> [name\_separator](#input\_name\_separator) | Name separator | `string` | `"-"` | no |
 | <a name="input_sampling_percentage"></a> [sampling\_percentage](#input\_sampling\_percentage) | Specifies the percentage of the data produced by the monitored application that is sampled for Application Insights telemetry. | `number` | `100` | no |
 
-## Outputs
+#### Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_app_id"></a> [app\_id](#output\_app\_id) | The App ID associated with this Application Insights component. |
-| <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | The Connection String for this Application Insights component. (Sensitive) |
-| <a name="output_id"></a> [id](#output\_id) | The ID of the Application Insights component. |
-| <a name="output_instrumentation_key"></a> [instrumentation\_key](#output\_instrumentation\_key) | The Instrumentation Key for this Application Insights component. (Sensitive) |
-| <a name="output_name"></a> [name](#output\_name) | The name of the Application Insights component. |
+No outputs.
 <!-- END_TF_DOCS -->
 ## Related documentation
 
