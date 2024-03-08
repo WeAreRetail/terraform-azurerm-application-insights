@@ -1,7 +1,4 @@
-# Azure Umanis Application Insights
-
-[![Build Status](https://dev.azure.com/umanis-consulting/terraform/_apis/build/status/mod_azu_application_insights?repoName=mod_azu_application_insights&branchName=master)](https://dev.azure.com/umanis-consulting/terraform/_build/latest?definitionId=6&repoName=mod_azu_application_insights&branchName=master) [![Unilicence](https://img.shields.io/badge/licence-The%20Unilicence-green)](LICENCE)
-
+# Azure Application Insights
 
 Common Azure terraform module to create an Application Insights component.
 ## Naming
@@ -14,7 +11,7 @@ The resource location is the parent resource group location. To specify a custom
 Tags are inherited from parent resource group. To add resource specific tags, use the `custom_tags`
 ## Usage
 ```hcl
-module "umanis_application_insights" {
+module "weareretail_application_insights" {
   source = "WeAreRetail/application-insights/azurerm"
 
   instance_index                      = 1
