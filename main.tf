@@ -24,14 +24,14 @@ resource "azurecaf_name" "self" {
 }
 
 resource "azurerm_application_insights" "self" {
-  name                                  = local.resource_name
-  location                              = local.location
-  resource_group_name                   = data.azurerm_resource_group.parent_group.name
-  tags                                  = local.tags
-  application_type                      = "web"
-  daily_data_cap_in_gb                  = var.daily_data_cap_in_gb
-  daily_data_cap_notifications_disabled = var.daily_data_cap_notifications_disabled
-  sampling_percentage                   = var.sampling_percentage
-  disable_ip_masking                    = false
-  workspace_id                          = var.log_analytics_workspace_resource_id
+  name                                 = local.resource_name
+  location                             = local.location
+  resource_group_name                  = data.azurerm_resource_group.parent_group.name
+  tags                                 = local.tags
+  application_type                     = "web"
+  daily_data_cap_in_gb                 = var.daily_data_cap_in_gb
+  daily_data_cap_notifications_enabled = !var.daily_data_cap_notifications_disabled
+  sampling_percentage                  = var.sampling_percentage
+  ip_masking_enabled                   = true
+  workspace_id                         = var.log_analytics_workspace_resource_id
 }
